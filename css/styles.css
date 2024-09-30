@@ -1,0 +1,123 @@
+html body {
+    margin: 0   ;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    
+}
+
+header {
+    background-color: antiquewhite;
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+}
+
+#search {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#notif-area {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#user-info {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#action-buttons {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flexbox;
+}
+
+main {
+    background-color: rgb(183, 219, 219);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1em;
+    gap: 1em;
+}
+
+#projects {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: rgb(215, 201, 201);
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+
+}
+
+#projects div {
+    display: grid;
+    background-color: rgb(222, 214, 214);
+    border-radius: 10px;
+    flex-grow: 1;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-template-rows: repeat(auto-fill, minmax(150px, 1fr)); */
+}
+
+#projects div div {
+    background-color: white;
+}
+
+#announcements {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 20px;
+    padding: 0.5em;
+    background-color:rgb(196, 163, 226);
+    display: flex;
+    flex-direction: column;
+}
+
+#announcements div {
+    display: grid;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#trending {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: rgb(201, 168, 168);
+    font-size: 20px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#trending div {
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+aside { 
+    background-color:rgb(196, 163, 226);
+    grid-area: 1 / 1 / 3 / 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard {
+    background-color: chocolate;
+    flex: 0 0 10%;
+}
+
+#tabs-one {
+    background-color: #775151;
+    flex: 0 0 35%;
+}
+
+#tabs-two {
+    background-color: #d9bfe7;
+    flex-grow: 1;
+}
